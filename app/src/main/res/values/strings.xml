@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dogs</string>
+    <string name="identify_the_breed">Identify the Breed</string>
+    <string name="submit">Submit</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="correct_answer_default">Correct Answer</string>
+    <string name="identify_the_dog">Identify the Dog</string>
+    <string name="search_dog_breeds">Search Dog Breeds</string>
+    <string name="next">Next</string>
+    <string name="stop">Stop</string>
+    <string name="timer">Timer </string>
+    <string name="initial_timer_value">10</string>
+    <string name="times_up">Time\'s Up</string>
+</resources>

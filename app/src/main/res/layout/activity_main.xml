@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    tools:context=".view.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <include
+            android:id="@+id/tool_bar"
+            android:elevation="2dp"
+            layout="@layout/tool_bar" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#607d8b"
+                app:cardCornerRadius="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/timer_image"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/timer_off"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+                <Switch
+                    android:id="@+id/switch_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timer"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:track="@drawable/switch_bg"
+                    android:layout_gravity="center"
+                    />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/first_two_images"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:layout_marginTop="16dp"
+                android:weightSum="100">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/identify_the_breed"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="75dp"
+                        app:contentPadding="15dp"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/frame"
+                                android:scaleType="fitXY"
+                                android:onClick="identifyTheBreed"
+                                app:srcCompat="@drawable/identify_breed" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/frame" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/identify_the_dog"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="75dp"
+                        app:contentPadding="15dp"
+                        android:layout_alignParentBottom="true">
+
+
+                        <ImageButton
+                            android:id="@+id/dog_button_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/frame"
+                            android:scaleType="fitXY"
+                            android:onClick="identifyTheDog"
+                            app:srcCompat="@drawable/identify_dog" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/frame" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/search_dog"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="15dp"
+                    app:contentPadding="15dp">
+
+
+                    <ImageButton
+                        android:id="@+id/dog_button_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/frame"
+                        android:scaleType="fitXY"
+                        android:onClick="searchDogBreeds"
+                        app:srcCompat="@drawable/search" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/frame" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

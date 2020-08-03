@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a1887f</color>
+    <color name="colorPrimaryDark">#725b53</color>
+    <color name="colorAccent">#d3b8ae</color>
+
+    <color name="pinkColorForElements">#f06292</color>
+    <color name="spinnerBg">#b0bec5</color>
+    <color name="answerWrongRed">#ff3333</color>
+    <color name="answerCorrectGreen">#00701a</color>
+    <color name="correctAnswerBlue">#007c91</color>
+    <color name="white">#ffffff</color>
+
+
+
+<!-- colors for switch button-->
+    <color name="switchTrack">#d3b8ae</color>
+    <color name="switchTrackDisable">#d3b8ae</color>
+    <color name="switchTrackActive">#ffc1e3</color>
+    <color name="switchTrackNormal">#d3b8ae</color>
+    <color name="switchThumbBgActive">#bf5f82</color>
+    <color name="switchThumbActive">#ad1457</color>
+</resources>
